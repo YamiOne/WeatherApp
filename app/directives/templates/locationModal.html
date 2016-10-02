@@ -1,0 +1,34 @@
+<div class = "location-modal__content">
+    <div class = "location-modal__header">
+        <h3>Let us know your location...</h3>
+    </div>
+    <div class = "location-modal__body">
+        <div class = "location-modal__text" ng-if = "LMC.location.step == 0">
+            <span>Do you want to allow app to detect your location?</span>
+        </div>
+        <div class = "modal-input" ng-if = "LMC.location.step != 0">
+            <div class = "modal-input__title">
+                <span>Please enter your location!</span>
+            </div>
+            <div class = "modal-input__block">
+                <label>Country Code</label>
+                <input type = "text" ng-model = "LMC.location.country_code" placeholder = "E.g. GB, US..." />
+            </div>
+            <div class = "modal-input__block">
+                <label>ZIP</label>
+                <input type = "text" ng-model = "LMC.location.zip_code" placeholder = "Enter your ZIP code" />
+            </div>
+        </div>
+    </div>
+    <div class = "location-modal__footer">
+        <button class = "location-modal__button location-modal__button--confirm"
+            ng-click = "LMC.getLocation()"
+            ng-class = "{'location-modal__button--disabled': LMC.location.step == 1 && (LMC.location.zip_code == '' || LMC.location.country_code == '')}"
+            ng-disabled = "LMC.location.step == 1 && (LMC.location.zip_code == '' || LMC.location.country_code == '')">
+            Get Location
+        </button>
+        <button class = "location-modal__button location-modal__button--deny" ng-click = "LMC.denyLocation()">
+            Deny
+        </button>
+    </div>
+</div>

@@ -1,0 +1,168 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 20px; }
+
+.weather-holder {
+  display: flex;
+  width: 30%;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #808080;
+  border-radius: 5px; }
+  .weather-holder__content {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    flex-flow: row wrap;
+    background-color: #efefef; }
+    .weather-holder__content--regular {
+      display: flex;
+      position: relative;
+      width: 100%;
+      padding: 10px;
+      flex-flow: row wrap;
+      background-color: #efefef; }
+    .weather-holder__content--missing {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .weather-holder__content--missing span {
+        font-size: 18px;
+        font-family: sans-serif;
+        color: #808080; }
+  .weather-holder__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  .weather-holder__location-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    border: 2px solid #FFF; }
+    .weather-holder__location-name span {
+      font-size: 18px;
+      font-family: sans-serif; }
+  .weather-holder__location-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    border: 2px solid #FFF; }
+    .weather-holder__location-temp span {
+      font-size: 18px;
+      font-family: sans-serif; }
+
+.board {
+  background-color: #2196F3;
+  border-radius: 5px;
+  display: flex;
+  width: 60%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center; }
+  .board h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #FFF; }
+
+.location-modal {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .location-modal__content {
+    display: flex;
+    position: relative;
+    background-color: #FFF;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    border-radius: 5px;
+    padding: 0px 20px;
+    width: 400px; }
+  .location-modal__header {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    border-bottom: 1px solid #808080;
+    margin: 0px -20px; }
+    .location-modal__header h3 {
+      padding: 0px 10px;
+      color: #808080;
+      font-family: sans-serif;
+      font-size: 20px;
+      margin: 15px 0px; }
+  .location-modal__body {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px; }
+  .location-modal__text {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 18px;
+    color: #808080; }
+  .location-modal__footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20px;
+    border-top: 1px solid #808080;
+    margin: 0px -20px; }
+  .location-modal__button {
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer; }
+    .location-modal__button--confirm {
+      background-color: #558B2F; }
+    .location-modal__button--deny {
+      background-color: #c62828; }
+    .location-modal__button--disabled {
+      background-color: #808080;
+      color: #FFF; }
+
+.modal-input__title {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  padding: 10px 0px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #808080; }
+
+.modal-input__block {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 10px 0px; }
+  .modal-input__block label {
+    margin-bottom: 10px; }
+  .modal-input__block input {
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #808080; }

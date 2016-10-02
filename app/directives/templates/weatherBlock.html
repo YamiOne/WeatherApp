@@ -1,0 +1,14 @@
+<div class = "weather-holder__content--regular" ng-if = "WBC.weatherInfo.location_name != ''">
+    <div class = "weather-holder__icon">
+        <img alt = "weather-icon" src = "http://openweathermap.org/img/w/{{WBC.weatherInfo.weather.icon}}.png" />
+    </div>
+    <div class = "weather-holder__location-name">
+        <span>{{WBC.weatherInfo.location_name}}</span>
+    </div>
+    <div class = "weather-holder__location-temp">
+        <span>{{WBC.weatherInfo.temperature | number: 0}} &deg;C</span>
+    </div>
+</div>
+<div class = "weather-holder__content--missing" ng-if = "WBC.weatherInfo.location_name == ''">
+    <span>No required data found!</span>
+</div>
