@@ -1,5 +1,5 @@
 # WeatherApp
-Tabs done in SCSS; Content with lazy loading.
+WeatherApp done in AngularJS using Openweathermap API for data.
 
 # Installation guide
 
